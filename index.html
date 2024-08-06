@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="src/css/styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="input">
+      <div class="day-input">
+
+        <label for="day">
+          <span>DAY</span>
+          <input id="day" step="1" type="number" placeholder="DD"
+          class="input-field">
+        </label>
+        <span class="error" id="day-error">Must be a vaid day</span>
+      </div>
+      <div class="month-input">
+        
+        <label for="month">
+          <span>MONTH</span>
+          <input id="month" type="number" placeholder="MM" step="1"
+          class="input-field">
+        </label>
+        <span class="error" id="month-error">Must be a vaid month</span>
+      </div>
+      <div class="year-input">
+        <label for="year">
+          <span>YEAR</span>
+          <input id="year" step="1" type="number" placeholder="YYYY"
+          class="input-field">
+        </label>
+        <span class="error" id="year-error">Must be a vaid year</span>
+      </div>
+      
+      <div class="submit">
+        <button class="submit-btn" id="submit-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+      </div>
+      <div class="display">
+      <p>
+        <span id="years-result">--</span>years
+      </p>
+      <p>
+        <span id="months-result">--</span>months
+      </p>
+      <p>
+        <span id="days-result">--</span>days
+      </p>
+    </div>
+  </main>
+  <script src="src/js/script.js"></script>
+</body>
+</html>

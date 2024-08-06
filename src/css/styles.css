@@ -1,0 +1,138 @@
+:root{
+--Purple: hsl(259, 100%, 65%);
+--Lightred: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Offwhite: hsl(0, 0%, 94%);
+--Lightgrey: hsl(0, 0%, 86%);
+--Smokeygrey: hsl(0, 1%, 44%);
+--Offblack: hsl(0, 0%, 8%);
+--Fontsize_input: 2rem;
+}
+@font-face {
+    font-family: Poppin;
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: PoppinExtraBold;
+    src: url("/assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Offwhite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Poppin;
+}
+
+main{
+    background-color: var(--White);
+    padding: 2rem;
+    border-radius: 10px 10px 100px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input{
+    width: 90%;
+    margin: 1rem 0rem 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Lightgrey);
+    padding-bottom: 1rem;
+}
+
+.input div label{
+    font-weight: bold;
+    color: var(--Smokeygrey);
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.4rem;
+}
+
+.input div label input{
+    margin-top: 0.5rem;
+    width: 75%;
+    height: 3rem;
+    font-size: var(--Fontsize_input);
+    border: 1px solid var(--Lightgrey);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--Offblack);
+    font-weight: bold;
+}
+
+.input div label input::placeholder{
+    font-weight: bold;
+}   
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    display: none;
+}
+
+.display p{
+    font-size: 3rem;
+    font-family: PoppinExtraBold;
+}
+
+.display span{
+    color: var(--Purple);
+}
+
+.error{
+    color: red;
+    font-size: 0.6rem;
+    display: none;
+}
+
+.submit{
+    translate: 0px 68%;
+    display: flex;
+    align-items: center;
+}
+
+input:hover::placeholder{
+    color: transparent;
+}
+
+.submit-btn{
+    cursor: pointer;
+    background-color: var(--Purple);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;      
+}
+
+.submit-btn:hover{
+    background-color: var(--Offblack);
+}
+
+@media screen and (max-width:48em) {
+    main{
+        width: 98%;
+        padding-right: 0.5rem;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .input label{
+        font-size: 0.5rem;
+        color: white;
+    }
+
+    .input-field::placeholder{
+        font-size: 1.5rem;
+    }
+}
