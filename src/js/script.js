@@ -15,7 +15,7 @@ var error_1 = "This field is required";
 var error_day = "Must be a valid day";
 var error_month = "Must be a valid month";
 var error_year = "Must be in the past";
-var present_date = new Date(2024, 11, 31); // December 31, 2024
+var present_date = new Date(); // December 31, 2024
 var user_date = new Date();
 var number_of_days_in_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 // Event Handlers

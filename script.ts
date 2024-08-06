@@ -15,7 +15,7 @@ let error_1: string = "This field is required";
 let error_day: string = "Must be a valid day";
 let error_month: string = "Must be a valid month";
 let error_year: string = "Must be in the past";
-let present_date = new Date(2024, 11, 31); // December 31, 2024
+let present_date = new Date(); // December 31, 2024
 let user_date = new Date();
 let number_of_days_in_months: number[] = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
